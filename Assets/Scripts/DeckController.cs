@@ -6,7 +6,7 @@ public class DeckController : MonoBehaviour
     public GameObject card2; 
     public Transform slot1; 
     public Transform slot2; 
-    public float moveDuration = 1f; 
+    public float moveDuration = 0.3f; 
 
     private bool hasDrawn = false;
 
@@ -16,7 +16,9 @@ public class DeckController : MonoBehaviour
         {
             hasDrawn = true;
             MoveCard(card1, slot1.position);
-            MoveCard(card2, slot2.position, 1f); // delay
+            MoveCard(card2, slot2.position, 0.35f); // delay
+            card1.gameObject.tag = "Drawn";
+            card2.gameObject.tag = "Drawn";
         }
     }
 
