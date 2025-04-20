@@ -1068,6 +1068,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795176468}
   m_CullTransparentMesh: 1
+--- !u!1 &872077841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5001483892941120196, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
+  m_PrefabInstance: {fileID: 110971438936882284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &872077847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872077841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e22b193fdfec584faad2e4c40d06aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: https://www.galacticomnivore.com/
 --- !u!1 &911315630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,7 +1913,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 212420848038984632, guid: 47f6b8e69a815284d8e1edca61047b87, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2077848328}
   m_SourcePrefab: {fileID: 100100000, guid: 47f6b8e69a815284d8e1edca61047b87, type: 3}
 --- !u!1 &1264877880
 GameObject:
@@ -3287,6 +3308,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030103467}
   m_CullTransparentMesh: 1
+--- !u!1 &2077848324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 212420848038984632, guid: 47f6b8e69a815284d8e1edca61047b87, type: 3}
+  m_PrefabInstance: {fileID: 1133549568}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2077848328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077848324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e22b193fdfec584faad2e4c40d06aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: https://discord.gg/SpnqXe9J
 --- !u!1001 &110971438936882284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3393,7 +3432,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3429609990176967966, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
       insertIndex: -1
       addedObject: {fileID: 341195227}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5001483892941120196, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 872077847}
   m_SourcePrefab: {fileID: 100100000, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
 --- !u!222 &203531002274976739
 CanvasRenderer:
