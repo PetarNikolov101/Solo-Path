@@ -1218,7 +1218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Design & UI/UX in Unity
+  m_text: 3D artist
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3bf53c7aedabbde4aa8f7dafd3812e2e, type: 2}
   m_sharedMaterial: {fileID: 2021633104285547398, guid: 3bf53c7aedabbde4aa8f7dafd3812e2e, type: 2}
@@ -1429,7 +1429,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 24ba97c1c0527e94a8315ada072003b3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1da95913e64549443b320eb603fcb2ef, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1727,7 +1727,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Unity Development
+  m_text: Development in Unity
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3bf53c7aedabbde4aa8f7dafd3812e2e, type: 2}
   m_sharedMaterial: {fileID: 2021633104285547398, guid: 3bf53c7aedabbde4aa8f7dafd3812e2e, type: 2}
@@ -1975,7 +1975,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Andreja Popovik
+  m_text: Andrej XXX
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3bf53c7aedabbde4aa8f7dafd3812e2e, type: 2}
   m_sharedMaterial: {fileID: 2021633104285547398, guid: 3bf53c7aedabbde4aa8f7dafd3812e2e, type: 2}
@@ -2185,6 +2185,22 @@ PrefabInstance:
     - target: {fileID: 5226877858503330124, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
       propertyPath: m_SizeDelta.y
       value: 153
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211604987435262683, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1107.5837
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211604987435262683, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 375.894
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211604987435262683, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 94.7003
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211604987435262683, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -29.676025
       objectReference: {fileID: 0}
     - target: {fileID: 8070755670334198098, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
       propertyPath: m_Name
@@ -3417,6 +3433,22 @@ PrefabInstance:
     - target: {fileID: 3429609990176967966, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211604987435262683, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1072.5518
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211604987435262683, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 518.2615
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211604987435262683, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.3856812
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211604987435262683, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15.243225
       objectReference: {fileID: 0}
     - target: {fileID: 8070755670334198098, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
       propertyPath: m_Name
