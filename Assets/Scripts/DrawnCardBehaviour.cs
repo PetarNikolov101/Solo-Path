@@ -43,26 +43,30 @@ public class DrawnCardBehaviour: MonoBehaviour
 
     void Update()
     {
-        if (!isHovered)
-        {
-            // Gradually rotate the card back to its original rotation (0 on the X-axis)
-            float currentXRotation = transform.eulerAngles.x;
-            if (currentXRotation > 180f) currentXRotation -= 360f; 
+        if(gameObject.tag == "Drawn"){
 
-            if (currentXRotation > 0f)
+        
+            if (!isHovered)
             {
-                Vector3 rotation = new Vector3(-rotateBackSpeed, 0, 0) * Time.deltaTime;
-                transform.Rotate(rotation, Space.World);
-            }
-            else if (currentXRotation < 0f)
-            {
-                Vector3 rotation = new Vector3(rotateBackSpeed, 0, 0) * Time.deltaTime;
-                transform.Rotate(rotation, Space.World);
-                
-            }
-            if(transform.position.y > moveDownLimit && hovered_once){
-                Vector3 movement = Vector3.down * moveDownSpeed * Time.deltaTime; 
-                transform.Translate(movement, Space.World); 
+                // Gradually rotate the card back to its original rotation (0 on the X-axis)
+                float currentXRotation = transform.eulerAngles.x;
+                if (currentXRotation > 180f) currentXRotation -= 360f; 
+
+                if (currentXRotation > 0f)
+                {
+                    Vector3 rotation = new Vector3(-rotateBackSpeed, 0, 0) * Time.deltaTime;
+                    transform.Rotate(rotation, Space.World);
+                }
+                else if (currentXRotation < 0f)
+                {
+                    Vector3 rotation = new Vector3(rotateBackSpeed, 0, 0) * Time.deltaTime;
+                    transform.Rotate(rotation, Space.World);
+                    
+                }
+                if(transform.position.y > moveDownLimit && hovered_once){
+                    Vector3 movement = Vector3.down * moveDownSpeed * Time.deltaTime; 
+                    transform.Translate(movement, Space.World); 
+                }
             }
         }
     }
