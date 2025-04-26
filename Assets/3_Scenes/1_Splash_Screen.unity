@@ -1918,6 +1918,24 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2077848328}
   m_SourcePrefab: {fileID: 100100000, guid: 47f6b8e69a815284d8e1edca61047b87, type: 3}
+--- !u!1 &1156543929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5001483892941120196, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
+  m_PrefabInstance: {fileID: 1289195146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1156543935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156543929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e22b193fdfec584faad2e4c40d06aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: https://linktr.ee/PrintNplay
 --- !u!1 &1264877880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2221,7 +2239,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9170044468944810455, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1801473610}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5001483892941120196, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1156543935}
   m_SourcePrefab: {fileID: 100100000, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
 --- !u!224 &1289195147 stripped
 RectTransform:
@@ -4648,6 +4669,7 @@ GameObject:
   - component: {fileID: 4552433571140515256}
   - component: {fileID: 8995048551827420521}
   - component: {fileID: 6848497621475048202}
+  - component: {fileID: 8995048551827420522}
   m_Layer: 5
   m_Name: BTN_Start
   m_TagString: Untagged
@@ -4699,6 +4721,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8995048551827420522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8885832838524379007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59e70df84b7fdb43a3c14ce5c8af95b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

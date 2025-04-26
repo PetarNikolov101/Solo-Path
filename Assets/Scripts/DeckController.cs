@@ -15,26 +15,25 @@ public class DeckController : MonoBehaviour
         if (!hasDrawn)
         {
             hasDrawn = true;
-            MoveCard(card1, slot1.position);
-            MoveCard(card2, slot2.position, 0.35f); // delay
+            MoveCard(card1, slot1.position, slot1.rotation);
+            MoveCard(card2, slot2.position, slot2.rotation, 0.35f); // delay
             card1.gameObject.tag = "Drawn";
             card2.gameObject.tag = "Drawn";
         }
     }
 
-    void MoveCard(GameObject card, Vector3 targetPosition, float delay = 0f)
+    void MoveCard(GameObject card, Vector3 targetPosition, Quaternion targetRotation, float delay = 0f)
     {
-        StartCoroutine(MoveCardCoroutine(card, targetPosition, delay));
+        StartCoroutine(MoveCardCoroutine(card, targetPosition, targetRotation, delay));
     }
 
-    System.Collections.IEnumerator MoveCardCoroutine(GameObject card, Vector3 targetPosition, float delay)
+    System.Collections.IEnumerator MoveCardCoroutine(GameObject card, Vector3 targetPosition, Quaternion targetRotation, float delay)
     {
         yield return new WaitForSeconds(delay);
 
         float elapsedTime = 0f;
         Vector3 startPosition = card.transform.position;
         Quaternion startRotation = card.transform.rotation;
-        Quaternion targetRotation = Quaternion.identity; // Adjust if slots have specific rotations
 
         while (elapsedTime < moveDuration)
         {
@@ -42,11 +41,11 @@ public class DeckController : MonoBehaviour
             float t = elapsedTime / moveDuration;
             t = t * t * (3f - 2f * t); // Smoothstep
             card.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
-            card.transform.rotation = Quaternion.Lerp(startRotation, targetRotation, t);
+            //card.transform.rotation = Quaternion.Lerp(startRotation, targetRotation, t);
             yield return null;
         }
 
-        // Ensure final position is exact
+        // Ensure final position and rotation are exact
         card.transform.position = targetPosition;
         card.transform.rotation = targetRotation;
     }

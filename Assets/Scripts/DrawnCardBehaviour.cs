@@ -70,4 +70,9 @@ public class DrawnCardBehaviour: MonoBehaviour
             }
         }
     }
+
+    void OnAnimatorIK()
+    {
+        
+    }
 }
