@@ -280,6 +280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eternal Bonfire
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f6da51db6b10607498455b8ee8f40a17, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -364,6 +368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Octophy Merchant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f8629ce20d61f047ae2b01dfc6bf81b, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -447,6 +455,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 133e670137691e24095726a810519179, type: 3}
       propertyPath: m_Name
       value: Graveyard Calm
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 133e670137691e24095726a810519179, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -615,8 +627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12651f3a7402764781f970ace87b4e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card1: {fileID: 1417316737}
-  card2: {fileID: 171366819}
+  card1: {fileID: 2028862066}
+  card2: {fileID: 1110102949}
   slot1: {fileID: 1424364840}
   slot2: {fileID: 1172296396}
   moveDuration: 0.27
@@ -5553,6 +5565,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knight Merchant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25f3e0b1af749964d94c0f1d28ea84ad, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5593,6 +5609,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!65 &171366825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5798,6 +5816,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!65 &313521239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6219,6 +6239,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4dfe430da18cb574595e77212ea7102f, type: 3}
       propertyPath: m_Name
       value: Druid Leaves
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4dfe430da18cb574595e77212ea7102f, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6654,11 +6678,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 8c262b97fe614a4429500aaf56307c15, type: 3}
       propertyPath: m_Materials.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8c262b97fe614a4429500aaf56307c15, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7c4ed2065200dff4b84ff56917da23bd, type: 2}
     - target: {fileID: 919132149155446097, guid: 8c262b97fe614a4429500aaf56307c15, type: 3}
       propertyPath: m_Name
       value: Atheist in forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c262b97fe614a4429500aaf56307c15, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6721,6 +6753,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 493654002}
 --- !u!1 &554262321
 GameObject:
   m_ObjectHideFlags: 0
@@ -7188,6 +7222,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!65 &673736246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7621,6 +7657,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goblin Tradeship
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ac38b877bfa8dc47ae3cfdbe76b180b, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7944,6 +7984,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lone tower
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29383672bc6a25044bc154888b0a3727, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7979,6 +8023,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!65 &1028739422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8187,6 +8233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coal Town
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 003c8b67b55dd9946b63afd3a5ff1bdc, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8253,6 +8303,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!1 &1172296395
 GameObject:
   m_ObjectHideFlags: 0
@@ -8278,7 +8330,7 @@ Transform:
   m_GameObject: {fileID: 1172296395}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00019139705, y: 0.70710677, z: -0.70710677, w: 0.00019139705}
-  m_LocalPosition: {x: -12.816, y: 4.553, z: -10.705}
+  m_LocalPosition: {x: -12.816, y: 4.608, z: -10.705}
   m_LocalScale: {x: 1, y: 1, z: 1.1655}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8351,6 +8403,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b968c0009c83fca4da9cedcc16d4861a, type: 3}
       propertyPath: m_Name
       value: Aristocrat Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b968c0009c83fca4da9cedcc16d4861a, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8436,6 +8492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Everyones Crowd
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8556c6ebef7e0f845b76549018926051, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8471,6 +8531,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!65 &1194512496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8560,6 +8622,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 58ca549cec6896647b5def3752c55bbe, type: 3}
       propertyPath: m_Name
       value: The mother
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 58ca549cec6896647b5def3752c55bbe, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8716,10 +8782,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Merchant Peasant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d4fc841f080a314a962d7ea2e00eb11, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8d4fc841f080a314a962d7ea2e00eb11, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2028862070}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8d4fc841f080a314a962d7ea2e00eb11, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2028862069}
   m_SourcePrefab: {fileID: 100100000, guid: 8d4fc841f080a314a962d7ea2e00eb11, type: 3}
 --- !u!4 &1288642660 stripped
 Transform:
@@ -8896,6 +8972,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!65 &1400123270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8986,6 +9064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lightgod Ritual
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b6f755282aa6cd3458923d823fd48531, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9042,6 +9124,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!1 &1424364839
 GameObject:
   m_ObjectHideFlags: 0
@@ -9067,7 +9151,7 @@ Transform:
   m_GameObject: {fileID: 1424364839}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000024563633, y: 0.7071068, z: -0.7071068, w: -0.000024563633}
-  m_LocalPosition: {x: -11.629, y: 4.553, z: -10.705}
+  m_LocalPosition: {x: -11.642, y: 4.575, z: -10.705}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9141,6 +9225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light Wyrm
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a3308459eb8dc9e4abbca4001b02b482, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9176,6 +9264,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!65 &1427926382
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9340,6 +9430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon Jester
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9bed62a16f5ccc94a81c3707782f8538, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9396,6 +9490,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!1 &1519977364
 GameObject:
   m_ObjectHideFlags: 0
@@ -9577,6 +9673,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!1001 &1546694511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9645,6 +9743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Towers Magic Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 71e02e3366b59824792a7988ee9fd495, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9701,6 +9803,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!1 &1555312946
 GameObject:
   m_ObjectHideFlags: 0
@@ -9867,6 +9971,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!1001 &1641790836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10000,6 +10106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floating Light
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bbe1e2f7c40ed7c49b82c8b5a02f3ba3, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10035,6 +10145,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!65 &1648176884
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10124,6 +10236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Four Mages
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8826a48f470ecad48ba9d32eeb894c30, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10180,6 +10296,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!1001 &1691069291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10248,6 +10366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: One Eyed Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8ebc03770c36fd478770a7061efd0b8, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10283,6 +10405,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!65 &1691069296
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10371,6 +10495,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 947e68f65380a014ba3c094ea7794141, type: 3}
       propertyPath: m_Name
       value: Hooded Glass
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 947e68f65380a014ba3c094ea7794141, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10492,6 +10620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Four Entrances
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7065d0e734c1509439e3f9bc468aab1a, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10527,6 +10659,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!65 &1783155411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10593,6 +10727,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!1 &1827438269
 GameObject:
   m_ObjectHideFlags: 0
@@ -10753,6 +10889,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!65 &1833415245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10856,6 +10994,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!1 &1941912662
 GameObject:
   m_ObjectHideFlags: 0
@@ -11201,6 +11341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dwarven Merchant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7d1b9d00e6ea892448181fff72279af6, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11257,6 +11401,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!1 &1985599644
 GameObject:
   m_ObjectHideFlags: 0
@@ -11681,6 +11827,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020069006}
   m_CullTransparentMesh: 1
+--- !u!1 &2028862066 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8d4fc841f080a314a962d7ea2e00eb11, type: 3}
+  m_PrefabInstance: {fileID: 1288642659}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2028862069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028862066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126f34fd17c559847b43621a97a622e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveUpLimit: 4.65
+  speed: 1
+  rotationLimit: 65
+  rotationSpeed: 55
+  moveDownLimit: 4.5
+  moveDownSpeed: 0.7
+  rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
+--- !u!65 &2028862070
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028862066}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.006184056, y: 0.0100000035, z: 0.00024000465}
+  m_Center: {x: 0, y: 0, z: 0.000000014901161}
 --- !u!1 &2052745178
 GameObject:
   m_ObjectHideFlags: 0
@@ -12059,6 +12252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Druid healer
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad39207739fcb0f4c9c1ded4113830a3, type: 3}
+      propertyPath: m_TagString
+      value: Undrawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12094,6 +12291,8 @@ MonoBehaviour:
   moveDownLimit: 4.5
   moveDownSpeed: 0.7
   rotateBackSpeed: 70
+  light1: {fileID: 493654002}
+  light2: {fileID: 2079858691}
 --- !u!65 &2103344002
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -13,11 +13,29 @@ public class DrawnCardBehaviour: MonoBehaviour
     private bool hovered_once = false; 
     private Vector3 originalPosition; 
     private Quaternion originalRotation; 
+    public Light light1;
+    public Light light2;
+    private DeckController deckController;
+    private GameObject card1;
+    private GameObject card2;
+    private GameObject lastHoveredCard;
 
+    [System.Obsolete]
     void Start()
     {
         originalPosition = transform.position;
         originalRotation = transform.rotation;
+        if (deckController == null)
+        {
+            deckController = FindObjectOfType<DeckController>();
+        }
+
+        if (deckController != null)
+        {
+            card1 = deckController.card1; 
+            card2 = deckController.card2; 
+        }
+        
     }
     
     //Tilt the card towards the camera when it's hovered
@@ -30,7 +48,6 @@ public class DrawnCardBehaviour: MonoBehaviour
             if(transform.position.y < moveUpLimit){
                 Vector3 movement = Vector3.up * speed * Time.deltaTime; 
                 transform.Translate(movement, Space.World); 
-                Debug.Log("Moving card up, new Y: " + transform.position.y);
             }
 
             float currentXRotation = transform.eulerAngles.x;
@@ -40,6 +57,14 @@ public class DrawnCardBehaviour: MonoBehaviour
             {
                 Vector3 rotation = new Vector3(rotationSpeed, 0, 0) * Time.deltaTime;
                 transform.Rotate(rotation, Space.World);
+            }
+
+            if(gameObject == card1){
+                light1.intensity = 0.2f;
+                lastHoveredCard = card1;
+            }else {
+                light2.intensity = 0.2f;
+                lastHoveredCard = card2;
             }
         }
     }
@@ -55,12 +80,21 @@ public class DrawnCardBehaviour: MonoBehaviour
         {
             if (!isHovered && hovered_once) // Only move/rotate back if previously hovered
             {
+                //lights!
+                if (light1.intensity > 0 && lastHoveredCard == card1)
+                {
+                    light1.intensity = 0;
+                }
+                else if (light2.intensity > 0 && lastHoveredCard == card2)
+                {
+                    light2.intensity = 0;
+                }
+
                 // Move card down
                 if (transform.position.y > moveDownLimit)
                 {
                     Vector3 movement = Vector3.down * moveDownSpeed * Time.deltaTime;
                     transform.Translate(movement, Space.World);
-                    Debug.Log("Moving card down, new Y: " + transform.position.y);
                 }
 
                 // Rotate back to original rotation
