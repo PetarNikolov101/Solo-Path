@@ -459,9 +459,9 @@ RectTransform:
   - {fileID: 921895037}
   m_Father: {fileID: 1743363292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 760, y: -158.1173}
   m_SizeDelta: {x: 184, y: 316.2346}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &296280474 stripped
@@ -586,9 +586,9 @@ RectTransform:
   - {fileID: 587564053}
   m_Father: {fileID: 1743363292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 92, y: -158.1173}
   m_SizeDelta: {x: 184, y: 316.2346}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &497613702
@@ -2331,7 +2331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8070755670334198098, guid: 8055248fc347d7c469233c44cc50ef62, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -3235,9 +3235,9 @@ RectTransform:
   - {fileID: 1047888778}
   m_Father: {fileID: 1743363292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 426, y: -158.1173}
   m_SizeDelta: {x: 184, y: 316.2346}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1985087162
