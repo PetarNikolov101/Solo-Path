@@ -65,7 +65,6 @@ public class DeckController : MonoBehaviour
 
         float elapsedTime = 0f;
         Vector3 startPosition = card.transform.position;
-        Quaternion startRotation = card.transform.rotation;
 
         while (elapsedTime < moveDuration)
         {
@@ -73,7 +72,6 @@ public class DeckController : MonoBehaviour
             float t = elapsedTime / moveDuration;
             t = t * t * (3f - 2f * t); // Smoothstep
             card.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
-            //card.transform.rotation = Quaternion.Lerp(startRotation, targetRotation, t);
             yield return null;
         }
 
