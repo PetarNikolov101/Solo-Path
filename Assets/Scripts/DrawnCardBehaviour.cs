@@ -29,12 +29,6 @@ public class DrawnCardBehaviour: MonoBehaviour
         {
             deckController = FindObjectOfType<DeckController>();
         }
-
-        if (deckController != null)
-        {
-            card1 = deckController.card1; 
-            card2 = deckController.card2; 
-        }
         
     }
     
@@ -76,6 +70,11 @@ public class DrawnCardBehaviour: MonoBehaviour
 
     void Update()
     {
+        if (deckController != null)
+        {
+            card1 = deckController.card1; 
+            card2 = deckController.card2; 
+        }
         if (gameObject.tag == "Drawn")
         {
             if (!isHovered && hovered_once) // Only move/rotate back if previously hovered

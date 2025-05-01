@@ -33,9 +33,9 @@ public class DeckController : MonoBehaviour
             selectedCards[0].tag = "Drawn";
             selectedCards[1].tag = "Drawn";
         }
-        else if (availableCards.Count < 2)
+        else if (availableCards.Count < 1)
         {
-            Debug.LogWarning("Not enough cards left to draw!");
+            Debug.LogWarning("You won!");
         }
     }
 

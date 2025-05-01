@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Drawn
   - Undrawn
+  - Discarded
   layers:
   - Default
   - TransparentFX
