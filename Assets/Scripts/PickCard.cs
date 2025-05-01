@@ -9,6 +9,8 @@ public class PickCard : MonoBehaviour
     public float moveDuration = 0.3f;
     private Vector3 originalPosition;
     private Quaternion originalRotation;
+    public Light lightAbovePickedCard;
+    public Transform frontOfCamera;
 
     [System.Obsolete]
     void Start()
@@ -22,23 +24,20 @@ public class PickCard : MonoBehaviour
     }
     void OnMouseDown()
     {
-        Debug.Log("Card clicked: " + gameObject.name);
         if(transform.tag == "Drawn")
         {
-            Debug.Log("Is drawn: " + gameObject.name);
             if(gameObject == card1)
             {
-                Debug.Log("Card 1 clicked");
                 MoveCardToDiscard(card2, discardPile.position,originalRotation, 0.2f);
                 card2.tag="Discarded";
             }
             else if(gameObject == card2)
             {
-                Debug.Log("Card 2 clicked");
                 MoveCardToDiscard(card1, discardPile.position, originalRotation, 0.2f);
                 card1.tag="Discarded";
             }
-            MoveCardToScreen(gameObject, transform.position, transform.rotation, 0.4f);
+            gameObject.tag = "Picked";
+            MoveCardToScreen(gameObject, frontOfCamera.position, transform.rotation, 0.4f);
         }
     }
 
@@ -67,6 +66,19 @@ public class PickCard : MonoBehaviour
     System.Collections.IEnumerator MoveCardToScreenCoroutine(GameObject card, Vector3 targetPosition, Quaternion targetRotation, float delay)
     {
         yield return new WaitForSeconds(delay);
+        lightAbovePickedCard.intensity = 0.7f;
+
+        float elapsedTime = 0f;
+        Vector3 startPosition = card.transform.position;
+
+        while( elapsedTime < moveDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / moveDuration;
+            t = t * t * (3f - 2f * t); // Smoothstep
+            card.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+            yield return null;
+        }
     }
 
     void MoveCardToScreen(GameObject card, Vector3 targetPosition, Quaternion targetRotation, float delay = 0f)
