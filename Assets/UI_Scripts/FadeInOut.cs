@@ -6,7 +6,7 @@ public class FadeInOut : MonoBehaviour
     public CanvasGroup canvasGroup;
     public bool fadeIn = false;
     public bool fadeOut = false;
-    public float fadeDuration = 2f;
+    public float fadeDuration = 2.3f;
     public void FadeIn()
     {
         fadeIn = true;

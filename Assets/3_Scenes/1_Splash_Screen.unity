@@ -2041,7 +2041,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 1159701809}
   fadeIn: 0
   fadeOut: 0
-  fadeDuration: 2
+  fadeDuration: 2.3
 --- !u!114 &1159701813
 MonoBehaviour:
   m_ObjectHideFlags: 0

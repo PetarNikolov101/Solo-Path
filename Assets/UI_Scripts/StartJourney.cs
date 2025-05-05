@@ -15,7 +15,7 @@ public class StartJourney : MonoBehaviour
 
     public IEnumerator FadeAndLoadScene(){
         fade.FadeIn();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2.4f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
 

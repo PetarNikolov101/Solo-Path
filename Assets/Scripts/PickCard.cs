@@ -30,6 +30,7 @@ public class PickCard : MonoBehaviour
             {
                 MoveCardToDiscard(card2, discardPile.position,originalRotation, 0.2f);
                 card2.tag="Discarded";
+                card2.GetComponent<Renderer>().material.shader = Shader.Find("Custom/Desaturate");
             }
             else if(gameObject == card2)
             {
