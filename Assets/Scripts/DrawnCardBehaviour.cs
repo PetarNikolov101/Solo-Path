@@ -6,7 +6,7 @@ public class DrawnCardBehaviour: MonoBehaviour
     public float speed = 1f;
     public float rotationLimit = 65f;
     public float rotationSpeed = 55f;
-    public float moveDownLimit = 4.5f;
+    public float moveDownLimit = 4.6f;
     public float moveDownSpeed = 0.7f;
     public float rotateBackSpeed = 70f; 
     private bool isHovered = false;
