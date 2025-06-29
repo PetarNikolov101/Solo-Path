@@ -25,13 +25,13 @@ public class DeckController : MonoBehaviour
             List<GameObject> selectedCards = PickRandomCards(2);
             card1 = selectedCards[0];
             card2 = selectedCards[1];
-            // Move the cards to their slots
-            MoveCard(card1, slot1.position, slot1.rotation);
-            MoveCard(selectedCards[1], slot2.position, slot2.rotation, 0.35f); // Delay for second card
+            //Move the cards to their slots
+            MoveCard(card1, slot1.position, slot1.rotation);//SMENI CARD1
+            MoveCard(card2, slot2.position, slot2.rotation, 0.35f); // Delay for second card
 
             //Tag the cards as drawn
-            selectedCards[0].tag = "Drawn";
             card1.tag = "Drawn";
+            card2.tag = "Drawn"; //KOMENTIRAJ
             selectedCards[1].tag = "Drawn";
         }
         else if (availableCards.Count < 1)
