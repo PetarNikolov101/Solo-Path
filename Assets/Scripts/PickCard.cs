@@ -54,7 +54,7 @@ public class PickCard : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / moveDuration;
-            t = t * t * (3f - 2f * t); // Smoothstep
+            t = t * t * (3f - 2f * t); // smoothstep
             card.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
 
             yield return null;
@@ -76,7 +76,7 @@ public class PickCard : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / moveDuration;
-            t = t * t * (3f - 2f * t); // Smoothstep
+            t = t * t * (3f - 2f * t); // smoothstep
             card.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
             card.transform.rotation = Quaternion.Lerp(startRotation, targetRotation, t);
             yield return null;
