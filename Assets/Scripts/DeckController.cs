@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DeckController : MonoBehaviour
 {
@@ -11,11 +13,13 @@ public class DeckController : MonoBehaviour
     private bool hasDrawn = false;
     private string cardTag = "Undrawn"; 
     public GameObject card1;
-    public GameObject card2; 
+    public GameObject card2;
+    public TextMeshProUGUI cardCounter;
 
     void Start()
     {
         availableCards = GameObject.FindGameObjectsWithTag(cardTag).ToList();
+        cardCounter.text = availableCards.Count.ToString();
     }
     void OnMouseDown()
     {
@@ -25,14 +29,14 @@ public class DeckController : MonoBehaviour
             List<GameObject> selectedCards = PickRandomCards(2);
             card1 = selectedCards[0];
             card2 = selectedCards[1];
-            //Move the cards to their slots
+            //move the cards to their slots
             MoveCard(card1, slot1.position, slot1.rotation);//SMENI CARD1
-            MoveCard(card2, slot2.position, slot2.rotation, 0.35f); // Delay for second card
+            MoveCard(card2, slot2.position, slot2.rotation, 0.35f); // delay for second card
 
             //Tag the cards as drawn
             card1.tag = "Drawn";
-            card2.tag = "Drawn"; //KOMENTIRAJ
-            selectedCards[1].tag = "Drawn";
+            card2.tag = "Drawn"; //KOMENTIRAJ,, update: huh?
+            //selectedCards[1].tag = "Drawn";
         }
         else if (availableCards.Count < 1)
         {
@@ -43,15 +47,18 @@ public class DeckController : MonoBehaviour
     List<GameObject> PickRandomCards(int count)
     {
         List<GameObject> pickedCards = new List<GameObject>();
-        List<GameObject> tempList = new List<GameObject>(availableCards); // Copy to avoid modifying original
+        List<GameObject> tempList = new List<GameObject>(availableCards); // copy to avoid modifying original
 
         for (int i = 0; i < count && tempList.Count > 0; i++)
         {
             int randomIndex = Random.Range(0, tempList.Count);
             pickedCards.Add(tempList[randomIndex]);
-            tempList.RemoveAt(randomIndex); // Remove to avoid picking the same card twice
-            availableCards.Remove(pickedCards[i]); // Remove from available cards
+            tempList.RemoveAt(randomIndex); // remove to avoid picking the same card twice
+            cardCounter.text = availableCards.Count.ToString(); // update the card counter
+            availableCards.Remove(pickedCards[i]); // remove from available cards
         }
+
+        cardCounter.text = availableCards.Count.ToString(); // update the card counter
 
         return pickedCards;
     }
@@ -71,12 +78,10 @@ public class DeckController : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / moveDuration;
-            t = t * t * (3f - 2f * t); // Smoothstep
+            t = t * t * (3f - 2f * t); // smoothstep
             card.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
             yield return null;
         }
-
-        // Ensure final position and rotation are exact
         card.transform.position = targetPosition;
         card.transform.rotation = targetRotation;
     }

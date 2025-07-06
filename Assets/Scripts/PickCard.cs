@@ -64,13 +64,15 @@ public class PickCard : MonoBehaviour
     }
 
     System.Collections.IEnumerator MoveCardToScreenCoroutine(GameObject card, Vector3 targetPosition, Quaternion targetRotation, float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        lightAbovePickedCard.intensity = 0.7f;
-
-        float elapsedTime = 0f;
+    { 
         Vector3 startPosition = card.transform.position;
         Quaternion startRotation = card.transform.rotation;
+        
+        yield return new WaitForSeconds(delay);
+        lightAbovePickedCard.intensity = 0.7f;
+        
+
+        float elapsedTime = 0f;
 
         while (elapsedTime < moveDuration)
         {
@@ -78,6 +80,7 @@ public class PickCard : MonoBehaviour
             float t = elapsedTime / moveDuration;
             t = t * t * (3f - 2f * t); // smoothstep
             card.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+            card.transform.rotation = Quaternion.Lerp(startRotation, targetRotation, t);
             yield return null;
         }
 

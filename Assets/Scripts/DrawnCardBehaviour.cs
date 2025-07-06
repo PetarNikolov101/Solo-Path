@@ -32,7 +32,7 @@ public class DrawnCardBehaviour: MonoBehaviour
         
     }
     
-    //Tilt the card towards the camera when it's hovered
+    //tilt the card towards the camera when it's hovered
      void OnMouseOver()
     {
         isHovered = true;
@@ -45,7 +45,7 @@ public class DrawnCardBehaviour: MonoBehaviour
             }
 
             float currentXRotation = transform.eulerAngles.x;
-            if (currentXRotation > 180f) currentXRotation -= 360f; // Normalize to -180 to 180 range
+            if (currentXRotation > 180f) currentXRotation -= 360f; // normalize to -180 to 180 range
 
             if (currentXRotation > rotationLimit)
             {
@@ -77,7 +77,7 @@ public class DrawnCardBehaviour: MonoBehaviour
         }
         if (gameObject.tag == "Drawn")
         {
-            if (!isHovered && hovered_once) // Only move/rotate back if previously hovered
+            if (!isHovered && hovered_once) // only move/rotate back if previously hovered
             {
                 //lights!
                 if (light1.intensity > 0 && lastHoveredCard == card1)
@@ -89,14 +89,14 @@ public class DrawnCardBehaviour: MonoBehaviour
                     light2.intensity = 0;
                 }
 
-                // Move card down
+                // move card down
                 if (transform.position.y > moveDownLimit)
                 {
                     Vector3 movement = Vector3.down * moveDownSpeed * Time.deltaTime;
                     transform.Translate(movement, Space.World);
                 }
 
-                // Rotate back to original rotation
+                // rotate back to original rotation
                 if (transform.rotation != originalRotation)
                 {
                     transform.rotation = Quaternion.RotateTowards(
