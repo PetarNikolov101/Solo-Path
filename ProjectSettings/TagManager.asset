@@ -8,6 +8,10 @@ TagManager:
   - Undrawn
   - Discarded
   - Picked
+  - Rolled
+  - NotRolled
+  - HealthController
+  - DeckController
   layers:
   - Default
   - TransparentFX

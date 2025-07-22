@@ -15,9 +15,11 @@ public class DrawnCardBehaviour: MonoBehaviour
     private Quaternion originalRotation; 
     public Light light1;
     public Light light2;
+    public Light light3;
     private DeckController deckController;
     private GameObject card1;
     private GameObject card2;
+    private GameObject card3;
     private GameObject lastHoveredCard;
 
     [System.Obsolete]
@@ -56,9 +58,12 @@ public class DrawnCardBehaviour: MonoBehaviour
             if(gameObject == card1){
                 light1.intensity = 0.2f;
                 lastHoveredCard = card1;
-            }else {
+            }else if(gameObject == card2){
                 light2.intensity = 0.2f;
                 lastHoveredCard = card2;
+            }else if(gameObject == card3){
+                light3.intensity = 0.2f;
+                lastHoveredCard = card3;
             }
         }
     }
@@ -72,8 +77,16 @@ public class DrawnCardBehaviour: MonoBehaviour
     {
         if (deckController != null)
         {
-            card1 = deckController.card1; 
-            card2 = deckController.card2; 
+            card1 = deckController.card1;
+            card2 = deckController.card2;
+            if (deckController.card3 != null)
+            {
+                card3 = deckController.card3;
+            }
+            else
+            {
+                card3 = null;
+            }
         }
         if (gameObject.tag == "Drawn")
         {
@@ -87,6 +100,10 @@ public class DrawnCardBehaviour: MonoBehaviour
                 else if (light2.intensity > 0 && lastHoveredCard == card2)
                 {
                     light2.intensity = 0;
+                }
+                else if (light3.intensity > 0 && lastHoveredCard == card3)
+                {
+                    light3.intensity = 0;
                 }
 
                 // move card down

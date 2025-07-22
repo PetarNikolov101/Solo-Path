@@ -5,20 +5,25 @@ public class HealthController : MonoBehaviour
 {
     public TextMeshProUGUI healthText;
     public int currentHealth = 20;
-    void LoseHealth(int amount)
+    public void LoseHealth(int amount)
     {
         Debug.Log("Health lost: " + amount);
         currentHealth -= amount;
         UpdateHealthText();
     }
-    void GainHealth(int amount)
+    public void GainHealth(int amount)
     {
         Debug.Log("Health gained: " + amount);
         currentHealth += amount;
         UpdateHealthText();
     }
-    void UpdateHealthText()
+    public void UpdateHealthText()
     {
         healthText.text = currentHealth.ToString();
-    }   
+    } 
+
+    public int getHealth()
+    {
+        return currentHealth;
+    }  
 }

@@ -7,14 +7,17 @@ using UnityEngine.UI;
 public class DeckController : MonoBehaviour
 {
     public Transform slot1; 
-    public Transform slot2; 
+    public Transform slot2;
+    public Transform slot3;
     public float moveDuration = 0.3f; 
     private List<GameObject> availableCards = new List<GameObject>();
     private bool hasDrawn = false;
     private string cardTag = "Undrawn"; 
     public GameObject card1;
     public GameObject card2;
+    public GameObject card3;
     public TextMeshProUGUI cardCounter;
+    public bool drawThree = false;
 
     void Start()
     {
@@ -23,12 +26,13 @@ public class DeckController : MonoBehaviour
     }
     void OnMouseDown()
     {
-        if (!hasDrawn && availableCards.Count >= 1)
+        if (!hasDrawn && availableCards.Count >= 1 && !drawThree)
         {
             hasDrawn = true;
             List<GameObject> selectedCards = PickRandomCards(2);
             card1 = selectedCards[0];
-            card2 = selectedCards[1];
+            //card2 = selectedCards[1];
+            card2 = card3;
             //move the cards to their slots
             MoveCard(card1, slot1.position, slot1.rotation);//SMENI CARD1
             MoveCard(card2, slot2.position, slot2.rotation, 0.35f); // delay for second card
@@ -36,7 +40,26 @@ public class DeckController : MonoBehaviour
             //Tag the cards as drawn
             card1.tag = "Drawn";
             card2.tag = "Drawn"; //KOMENTIRAJ,, update: huh?
+            
             //selectedCards[1].tag = "Drawn";
+        }
+        else if (!hasDrawn && drawThree && availableCards.Count >= 3)
+        {
+            hasDrawn = true;
+            List<GameObject> selectedCards = PickRandomCards(3);
+            card1 = selectedCards[0];
+            card2 = selectedCards[1];
+            card3 = selectedCards[2];
+
+            MoveCard(card1, slot1.position, slot1.rotation);
+            MoveCard(card2, slot2.position, slot2.rotation, 0.35f); // delay for second card
+            MoveCard(card3, slot3.position, slot3.rotation, 0.7f); // delay for third card
+
+            card1.tag = "Drawn";
+            card2.tag = "Drawn";
+            card3.tag = "Drawn";
+
+            drawThree = false;
         }
         else if (availableCards.Count < 1)
         {

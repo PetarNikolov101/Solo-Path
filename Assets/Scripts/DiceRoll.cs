@@ -1,29 +1,57 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class DiceRoll : MonoBehaviour
 {
-    int target;
-    public int Target
-    {
-        get { return target; }
-        set { target = value; }
-    }
+    int roll;
+    GameObject card;
+    public GameObject dice;
+    public TMPro.TextMeshProUGUI rollText;
 
-    // roll
-    public int RollDice()
+    void Start()
     {
-        return Random.Range(1, 7); // Returns a random number between 1 and 6
+        Button button = GetComponent<Button>();
+        button.onClick.AddListener(CallCardScript);
     }
-
-    public bool getFailOrSuccess(int roll, int target)
+    void Update()
     {
-        if (roll >= target)
+        card = GameObject.FindWithTag("Picked");
+    }
+    // roll the dice when the card is clicked, and call the appropriate method based on the card and roll result
+    public void CallCardScript()
+    {
+        Debug.Log("Dice clicked");
+        if (dice.tag == "NotRolled")
         {
-            return true;
-        }   
-        else
-        {
-            return false;
+            RollDice();
+            if (card == null)
+            {
+                Debug.LogError("No card with tag 'Picked' found!");
+                return;
+            }
+            switch (card.name)
+            {
+                case "Lone Tower":
+                    if (roll >= 4)
+                    {
+                        card.GetComponent<LoneTowerScript>().Success();
+                        Debug.Log("Lone Tower Success");
+                    }
+                    else
+                    {
+                        card.GetComponent<LoneTowerScript>().Fail();
+                        Debug.Log("Lone Tower Fail");
+                    }
+                    break;
+            }
+            dice.tag = "Rolled"; 
         }
     }
+
+    // roll dice function
+    public void RollDice()
+    {
+        roll = Random.Range(1, 3);
+        rollText.text = roll.ToString();
+    }
+
 }
