@@ -50,7 +50,7 @@ public class DiceRoll : MonoBehaviour
     // roll dice function
     public void RollDice()
     {
-        roll = Random.Range(1, 3);
+        roll = Random.Range(1, 7);
         rollText.text = roll.ToString();
     }
 
