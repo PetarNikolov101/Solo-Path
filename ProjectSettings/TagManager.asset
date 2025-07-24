@@ -12,6 +12,7 @@ TagManager:
   - NotRolled
   - HealthController
   - DeckController
+  - InventoryController
   layers:
   - Default
   - TransparentFX
