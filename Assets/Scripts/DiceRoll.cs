@@ -37,6 +37,9 @@ public class DiceRoll : MonoBehaviour
                 case "Atheist in Forest":
                     card.GetComponent<AtheistInForestScript>().CheckSuccessOrFail(roll);
                     break;
+                case "One Eyed Tree":
+                    card.GetComponent<OneEyedTree>().CheckSuccessOrFail(roll);
+                    break;
             }
             dice.tag = "Rolled";
         }

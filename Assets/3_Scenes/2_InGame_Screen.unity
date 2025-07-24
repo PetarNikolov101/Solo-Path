@@ -653,7 +653,7 @@ MonoBehaviour:
   moveDuration: 0.27
   card1: {fileID: 182451217}
   card2: {fileID: 188876072}
-  card3: {fileID: 1690670778}
+  card3: {fileID: 483470048}
   cardCounter: {fileID: 1943025132}
   drawThree: 0
 --- !u!65 &118320918
@@ -7977,6 +7977,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e05826f227d05f4ca2df2a5d72ec9ea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 483470055}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e05826f227d05f4ca2df2a5d72ec9ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 483470058}
   m_SourcePrefab: {fileID: 100100000, guid: 6e05826f227d05f4ca2df2a5d72ec9ea, type: 3}
 --- !u!4 &483470047 stripped
 Transform:
@@ -8060,6 +8063,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0061840466, y: 0.0100000035, z: 0.00033913163}
   m_Center: {x: 0, y: -0.000000014901161, z: -7.275959e-12}
+--- !u!114 &483470058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483470048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a2dfe7991bb644a8abb252e5fa34dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &493653999
 GameObject:
   m_ObjectHideFlags: 0
