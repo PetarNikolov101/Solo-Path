@@ -31,8 +31,8 @@ public class DeckController : MonoBehaviour
             hasDrawn = true;
             List<GameObject> selectedCards = PickRandomCards(2);
             card1 = selectedCards[0];
-            //card2 = selectedCards[1];
-            card2 = card3;
+            card2 = selectedCards[1];
+            //card2 = card3;
             //move the cards to their slots
             MoveCard(card1, slot1.position, slot1.rotation);//SMENI CARD1
             MoveCard(card2, slot2.position, slot2.rotation, 0.35f); // delay for second card
