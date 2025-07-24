@@ -9154,6 +9154,51 @@ Transform:
   - {fileID: 408839911}
   m_Father: {fileID: 436401583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &981218605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 981218606}
+  - component: {fileID: 981218607}
+  m_Layer: 0
+  m_Name: LightController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &981218606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981218605}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.145629, y: 4.443938, z: -11.128766}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &981218607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981218605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9603d00d724ac5b45a2d46e6f2ee47ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLight: 0
 --- !u!4 &1008543417 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7073916126865138976, guid: 31f77eea5ca323e45be5b5b2c2e2dfa4, type: 3}
@@ -13828,3 +13873,4 @@ SceneRoots:
   - {fileID: 807062570}
   - {fileID: 596590776}
   - {fileID: 2011090275}
+  - {fileID: 981218606}
