@@ -6,10 +6,10 @@ public class Inventory : MonoBehaviour
     public int maxItems = 2;
     private List<string> items = new List<string>();
 
-    void Start()
-    {
-        items.Add("Bark of Lament"); 
-    }
+    // void Start()
+    // {
+    //     items.Add("Bark of Lament"); 
+    // }
     public void addToInventory(string item)
     {
         if (items.Count < maxItems)
