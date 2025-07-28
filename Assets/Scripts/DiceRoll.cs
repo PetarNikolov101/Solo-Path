@@ -40,6 +40,9 @@ public class DiceRoll : MonoBehaviour
                 case "One Eyed Tree":
                     card.GetComponent<OneEyedTree>().CheckSuccessOrFail(roll);
                     break;
+                case "Aristocrats Tower":
+                    card.GetComponent<AristocratTowerScript>().CheckSuccessOrFail(roll);
+                    break;
             }
             dice.tag = "Rolled";
         }

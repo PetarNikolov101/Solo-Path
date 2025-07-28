@@ -653,7 +653,7 @@ MonoBehaviour:
   moveDuration: 0.27
   card1: {fileID: 182451217}
   card2: {fileID: 188876072}
-  card3: {fileID: 483470048}
+  card3: {fileID: 188876072}
   cardCounter: {fileID: 1943025132}
   drawThree: 0
 --- !u!65 &118320918
@@ -6510,6 +6510,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7fff349b6409876468a94d7bbccb7087, type: 3}
       insertIndex: -1
       addedObject: {fileID: 188876073}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7fff349b6409876468a94d7bbccb7087, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 188876077}
   m_SourcePrefab: {fileID: 100100000, guid: 7fff349b6409876468a94d7bbccb7087, type: 3}
 --- !u!4 &188876071 stripped
 Transform:
@@ -6593,6 +6596,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0061840466, y: 0.0100000035, z: 0.00033913163}
   m_Center: {x: 0, y: -0.000000014901161, z: -7.275959e-12}
+--- !u!114 &188876077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188876072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2c2dcc5f525f741bc66481d18135d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &190544046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8723,7 +8738,7 @@ GameObject:
   - component: {fileID: 685996215}
   m_Layer: 0
   m_Name: DzingsController
-  m_TagString: Untagged
+  m_TagString: DzingsController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

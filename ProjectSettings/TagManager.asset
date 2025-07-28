@@ -13,6 +13,7 @@ TagManager:
   - HealthController
   - DeckController
   - InventoryController
+  - DzingsController
   layers:
   - Default
   - TransparentFX
