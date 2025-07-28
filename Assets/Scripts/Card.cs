@@ -4,9 +4,9 @@ using UnityEngine;
 abstract public class Card : MonoBehaviour
 {
     protected string cardName;
+    protected int dc; //dice check value, minimyum roll needed to succeed
     protected GameObject healthControllerObject;
     protected GameObject deckControllerObject;
-    protected int dc; //dice check value, minimyum roll needed to succeed
     protected GameObject inventoryController;
     protected GameObject dzingsController;
 

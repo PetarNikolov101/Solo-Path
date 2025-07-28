@@ -7,7 +7,7 @@ public class AtheistInForestScript : Card
     {
         inventoryController = GameObject.FindWithTag("InventoryController");
         healthControllerObject = GameObject.FindWithTag("HealthController");
-        dc = 3; // Minimum roll needed to succeed
+        dc = 3; 
     }
 
     public override void Success()

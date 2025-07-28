@@ -46,6 +46,9 @@ public class DiceRoll : MonoBehaviour
                 case "Druid Leaves":
                     card.GetComponent<DruidLeavesScript>().CheckSuccessOrFail(roll);
                     break;
+                case "Canyon Jester":
+                    card.GetComponent<CanynonJesterScript>().CheckSuccessOrFail(roll);
+                    break;
             }
             dice.tag = "Rolled";
         }

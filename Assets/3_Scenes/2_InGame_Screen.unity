@@ -653,7 +653,7 @@ MonoBehaviour:
   moveDuration: 0.27
   card1: {fileID: 182451217}
   card2: {fileID: 188876072}
-  card3: {fileID: 2042818388}
+  card3: {fileID: 130812105}
   cardCounter: {fileID: 1943025132}
   drawThree: 0
 --- !u!65 &118320918
@@ -772,6 +772,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 79885284895fc07429d817a438ae3299, type: 3}
       insertIndex: -1
       addedObject: {fileID: 130812106}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 79885284895fc07429d817a438ae3299, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 130812112}
   m_SourcePrefab: {fileID: 100100000, guid: 79885284895fc07429d817a438ae3299, type: 3}
 --- !u!4 &130812104 stripped
 Transform:
@@ -855,6 +858,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.006184056, y: 0.0100000035, z: 0.00033913163}
   m_Center: {x: 0, y: -2.6688057e-20, z: -7.275959e-12}
+--- !u!114 &130812112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130812105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346d85d1dfc7b4445bd4614bc089f1da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &136363112
 PrefabInstance:
   m_ObjectHideFlags: 0
