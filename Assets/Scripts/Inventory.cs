@@ -8,7 +8,7 @@ public class Inventory : MonoBehaviour
 
     // void Start()
     // {
-    //     items.Add("Bark of Lament"); 
+    //     items.Add("Jester's Crutch"); 
     // }
     public void addToInventory(string item)
     {

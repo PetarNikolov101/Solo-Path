@@ -6,13 +6,13 @@ using UnityEngine.UI;
 
 public class DeckController : MonoBehaviour
 {
-    public Transform slot1; 
+    public Transform slot1;
     public Transform slot2;
     public Transform slot3;
-    public float moveDuration = 0.3f; 
+    public float moveDuration = 0.3f;
     private List<GameObject> availableCards = new List<GameObject>();
     private bool hasDrawn = false;
-    private string cardTag = "Undrawn"; 
+    private string cardTag = "Undrawn";
     public GameObject card1;
     public GameObject card2;
     public GameObject card3;
@@ -43,7 +43,7 @@ public class DeckController : MonoBehaviour
             //Tag the cards as drawn
             card1.tag = "Drawn";
             card2.tag = "Drawn"; //KOMENTIRAJ,, update: huh?
-            
+
             //selectedCards[1].tag = "Drawn";
         }
         else if (!hasDrawn && drawThree && availableCards.Count >= 3)
@@ -111,4 +111,6 @@ public class DeckController : MonoBehaviour
         card.transform.position = targetPosition;
         card.transform.rotation = targetRotation;
     }
+    
+
 }

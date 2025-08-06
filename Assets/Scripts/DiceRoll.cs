@@ -49,6 +49,9 @@ public class DiceRoll : MonoBehaviour
                 case "Canyon Jester":
                     card.GetComponent<CanynonJesterScript>().CheckSuccessOrFail(roll);
                     break;
+                case "Everyones Crowd":
+                    card.GetComponent<EveryonesCrowdScript>().CheckSuccessOrFail(roll);
+                    break;
             }
             dice.tag = "Rolled";
         }
