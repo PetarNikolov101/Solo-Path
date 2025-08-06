@@ -18,6 +18,7 @@ public class DeckController : MonoBehaviour
     public GameObject card3;
     public TextMeshProUGUI cardCounter;
     public bool drawThree = false;
+    public bool drawOne = false;
 
     void Start()
     {
@@ -26,7 +27,7 @@ public class DeckController : MonoBehaviour
     }
     void OnMouseDown()
     {
-        if (!hasDrawn && availableCards.Count >= 1 && !drawThree)
+        if (!hasDrawn && availableCards.Count >= 1 && !drawThree && !drawOne)
         {
             hasDrawn = true;
             List<GameObject> selectedCards = PickRandomCards(2);
@@ -34,7 +35,7 @@ public class DeckController : MonoBehaviour
             card2 = selectedCards[1];
 
             //this is test code for new cards(takes and draws the one picked by hand in the editor):
-            //card2 = card3;
+            card2 = card3;
 
             //move the cards to their slots
             MoveCard(card1, slot1.position, slot1.rotation);//SMENI CARD1
@@ -63,6 +64,18 @@ public class DeckController : MonoBehaviour
             card3.tag = "Drawn";
 
             drawThree = false;
+        }
+        else if (drawOne && availableCards.Count >= 1)
+        {
+            hasDrawn = true;
+            List<GameObject> selectedCards = PickRandomCards(1);
+            card1 = selectedCards[0];
+
+            MoveCard(card1, slot1.position, slot1.rotation);
+
+            card1.tag = "Drawn";
+
+            drawOne = false;
         }
         else if (availableCards.Count < 1)
         {

@@ -52,6 +52,9 @@ public class DiceRoll : MonoBehaviour
                 case "Everyones Crowd":
                     card.GetComponent<EveryonesCrowdScript>().CheckSuccessOrFail(roll);
                     break;
+                case "Four Entrances":
+                    card.GetComponent<FourEnterancesScript>().CheckSuccessOrFail(roll);
+                    break;
             }
             dice.tag = "Rolled";
         }
