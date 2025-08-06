@@ -35,7 +35,7 @@ public class DeckController : MonoBehaviour
             card2 = selectedCards[1];
 
             //this is test code for new cards(takes and draws the one picked by hand in the editor):
-            card2 = card3;
+            //card2 = card3;
 
             //move the cards to their slots
             MoveCard(card1, slot1.position, slot1.rotation);//SMENI CARD1
