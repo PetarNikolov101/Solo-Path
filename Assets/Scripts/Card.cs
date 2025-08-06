@@ -1,17 +1,12 @@
 using System.Linq;
 using UnityEngine;
 
-abstract public class Card : MonoBehaviour
+abstract public class Card: MonoBehaviour
 {
-    protected string cardName;
     protected int dc; //dice check value, minimyum roll needed to succeed
-    protected GameObject healthControllerObject;
-    protected GameObject deckControllerObject;
-    protected GameObject inventoryController;
-    protected GameObject dzingsController;
-
     public abstract void Fail();
     public abstract void Success();
+    protected ControllersScript controllersScript = new ControllersScript();
 
     public void CheckSuccessOrFail(int roll)
     {
@@ -24,5 +19,4 @@ abstract public class Card : MonoBehaviour
             Fail();
         }
     }
-
 }
